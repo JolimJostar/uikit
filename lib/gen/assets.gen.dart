@@ -15,8 +15,14 @@ class $AssetsIconsGen {
   /// File path: assets/icons/SCM.svg
   String get scm => 'assets/icons/SCM.svg';
 
+  /// File path: assets/icons/checked.svg
+  String get checked => 'assets/icons/checked.svg';
+
+  /// File path: assets/icons/unchecked.svg
+  String get unchecked => 'assets/icons/unchecked.svg';
+
   /// List of all assets
-  List<String> get values => [scm];
+  List<String> get values => [scm, checked, unchecked];
 }
 
 class Assets {

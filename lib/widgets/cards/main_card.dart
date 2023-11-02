@@ -18,6 +18,7 @@ class MainCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return DecoratedBox(
       decoration: BoxDecoration(
+          color: context.myTheme.cardBackground,
           borderRadius: const BorderRadius.all(
             Radius.circular(16),
           ),
@@ -31,21 +32,29 @@ class MainCard extends StatelessWidget {
       child: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.fromLTRB(16, 16, 16, 20),
+            padding: const EdgeInsets.fromLTRB(0, 16, 0, 12),
             child: Column(
               children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      title,
-                      style: context.myTheme.textTheme.cardTitle,
-                    ),
-                    if (topAction != null) topAction!
-                  ],
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  child: Column(
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            title,
+                            style: context.myTheme.textTheme.cardTitle,
+                          ),
+                          if (topAction != null) topAction!
+                        ],
+                      ),
+                      const SizedBox(height: 16),
+                      child,
+                      const SizedBox(height: 12),
+                    ],
+                  ),
                 ),
-                const SizedBox(height: 16),
-                child,
                 if (bottomAction != null)
                   Column(
                     children: [
@@ -54,7 +63,7 @@ class MainCard extends StatelessWidget {
                         color: context.myTheme.gray,
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(12),
+                        padding: const EdgeInsets.only(top: 12),
                         child: bottomAction,
                       )
                     ],
