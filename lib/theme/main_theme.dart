@@ -9,6 +9,8 @@ part 'main_theme.tailor.dart';
 class _$MyTheme {
 
   static List<Color> get background => [Colors.red, Colors.blue];
+  static List<Color> get cardBackground => [Colors.white, Colors.white];
+  static List<Color> get transparent => [Colors.transparent, Colors.transparent];
   static List<Color> get white => [Colors.white, Colors.white];
   static List<Color> get black => [Colors.black, Colors.black];
   static List<Color> get gray => [const Color(0xFF38373B), const Color(0xFF38373B)];

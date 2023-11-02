@@ -7,7 +7,7 @@ part 'text_theme.tailor.dart';
 
 @tailorComponent
 class _$MyTextTheme {
-  static List<Color> get mainColor => [Colors.white, Colors.black];
+  static List<Color> get mainColor => [Colors.black, Colors.black];
 
   static List<TextStyle> get main => [
     TextStyle(
@@ -45,6 +45,63 @@ class _$MyTextTheme {
       fontFamily: FontFamily.roboto,
       fontSize: 25,
       height: 1.28,
+      color: mainColor[1],
+    ),
+  ];
+
+  static List<TextStyle> get button => [
+    TextStyle(
+      fontStyle: FontStyle.normal,
+      fontWeight: FontWeight.w600,
+      fontFamily: FontFamily.roboto,
+      fontSize: 16,
+      height: 1.5,
+      color: mainColor[0],
+    ),
+    TextStyle(
+      fontStyle: FontStyle.normal,
+      fontWeight: FontWeight.w600,
+      fontFamily: FontFamily.roboto,
+      fontSize: 16,
+      height: 1.5,
+      color: mainColor[1],
+    ),
+  ];
+
+  static List<TextStyle> get taskTitle => [
+     TextStyle(
+      fontStyle: FontStyle.normal,
+      fontWeight: FontWeight.w500,
+      fontFamily: FontFamily.roboto,
+      fontSize: 16,
+      height: 1.5,
+      color: mainColor[0],
+    ),
+    TextStyle(
+      fontStyle: FontStyle.normal,
+      fontWeight: FontWeight.w500,
+      fontFamily: FontFamily.roboto,
+      fontSize: 16,
+      height: 1.5,
+      color: mainColor[1],
+    ),
+  ];
+
+  static List<TextStyle> get taskDeadline => [
+     TextStyle(
+      fontStyle: FontStyle.normal,
+      fontWeight: FontWeight.w400,
+      fontFamily: FontFamily.roboto,
+      fontSize: 12,
+      height: 1.23,
+      color: mainColor[0],
+    ),
+    TextStyle(
+      fontStyle: FontStyle.normal,
+      fontWeight: FontWeight.w400,
+      fontFamily: FontFamily.roboto,
+      fontSize: 12,
+      height: 1.23,
       color: mainColor[1],
     ),
   ];
