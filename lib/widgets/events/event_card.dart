@@ -1,26 +1,25 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:uikit/theme/main_theme.dart';
-import 'package:uikit/widgets/tasks/ready_button.dart';
 
-class TaskCard extends StatelessWidget {
-  const TaskCard({
+class EventCard extends StatelessWidget {
+  const EventCard({
     super.key,
-    required this.taskDeadline,
-    required this.taskTitle,
-    required this.onChanged,
+    required this.date,
+    required this.eventTitle,
+    required this.eventSubtitle,
   }) : compact = false;
 
-  const TaskCard.compact({
+  const EventCard.compact({
     super.key,
-    required this.taskDeadline,
-    required this.taskTitle,
-    required this.onChanged,
+    required this.date,
+    required this.eventTitle,
+    required this.eventSubtitle,
   }) : compact = true;
 
-  final String taskTitle;
-  final DateTime taskDeadline;
-  final void Function(bool) onChanged;
+  final String eventTitle;
+  final String eventSubtitle;
+  final DateTime date;
   final bool compact;
 
   @override
@@ -52,23 +51,21 @@ class TaskCard extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    taskTitle,
+                    eventTitle,
                     style: context.textTheme.compactCardTitle,
                     maxLines: 2,
                     overflow: TextOverflow.ellipsis,
                   ),
                   const SizedBox(height: 4),
                   Text(
-                    DateFormat.yMd('ru').format(taskDeadline),
+                    eventSubtitle,
                     style: context.textTheme.compactCardSubtitle,
                   ),
                 ],
               ),
             ),
             const SizedBox(width: 20),
-            ReadyButton(
-              onChanged: onChanged,
-            ),
+            Text(DateFormat.yMd('ru').format(date))
           ],
         ),
       ),

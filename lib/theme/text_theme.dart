@@ -68,13 +68,13 @@ class _$MyTextTheme {
     ),
   ];
 
-  static List<TextStyle> get taskTitle => [
+  static List<TextStyle> get compactCardTitle => [
      TextStyle(
       fontStyle: FontStyle.normal,
       fontWeight: FontWeight.w500,
       fontFamily: FontFamily.roboto,
       fontSize: 16,
-      height: 1.5,
+      height: 1.23,
       color: mainColor[0],
     ),
     TextStyle(
@@ -82,17 +82,17 @@ class _$MyTextTheme {
       fontWeight: FontWeight.w500,
       fontFamily: FontFamily.roboto,
       fontSize: 16,
-      height: 1.5,
+      height: 1.23,
       color: mainColor[1],
     ),
   ];
 
-  static List<TextStyle> get taskDeadline => [
+  static List<TextStyle> get compactCardSubtitle => [
      TextStyle(
       fontStyle: FontStyle.normal,
       fontWeight: FontWeight.w400,
       fontFamily: FontFamily.roboto,
-      fontSize: 12,
+      fontSize: 13,
       height: 1.23,
       color: mainColor[0],
     ),
@@ -100,7 +100,7 @@ class _$MyTextTheme {
       fontStyle: FontStyle.normal,
       fontWeight: FontWeight.w400,
       fontFamily: FontFamily.roboto,
-      fontSize: 12,
+      fontSize: 13,
       height: 1.23,
       color: mainColor[1],
     ),
