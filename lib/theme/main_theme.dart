@@ -14,6 +14,7 @@ class _$MyTheme {
   static List<Color> get white => [Colors.white, Colors.white];
   static List<Color> get black => [Colors.black, Colors.black];
   static List<Color> get gray => [const Color(0xFF38373B), const Color(0xFF38373B)];
+  static List<Color> get grey => [const Color(0xFFD9D9D9), const Color(0xFFD9D9D9)];
 
   @themeExtension
   static List<MyTextTheme> textTheme = MyTextTheme.themes;
