@@ -124,4 +124,23 @@ class _$MyTextTheme {
           color: mainColor[1],
         ),
       ];
+
+  static List<TextStyle> get graphDataTitle => [
+        TextStyle(
+          fontStyle: FontStyle.normal,
+          fontWeight: FontWeight.w400,
+          fontFamily: FontFamily.roboto,
+          fontSize: 12,
+          height: 1.33,
+          color: mainColor[0],
+        ),
+        TextStyle(
+          fontStyle: FontStyle.normal,
+          fontWeight: FontWeight.w400,
+          fontFamily: FontFamily.roboto,
+          fontSize: 12,
+          height: 1.33,
+          color: mainColor[1],
+        ),
+      ];
 }
