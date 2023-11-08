@@ -10,99 +10,118 @@ class _$MyTextTheme {
   static List<Color> get mainColor => [Colors.black, Colors.black];
 
   static List<TextStyle> get main => [
-    TextStyle(
-      fontStyle: FontStyle.normal,
-      fontWeight: FontWeight.w700,
-      fontFamily: FontFamily.roboto,
-      fontSize: 40,
-      height: 1.20,
-      letterSpacing: 0.37,
-      color: mainColor[0],
-    ),
-    TextStyle(
-      fontStyle: FontStyle.normal,
-      fontWeight: FontWeight.w700,
-      fontFamily: FontFamily.roboto,
-      fontSize: 40,
-      height: 1.20,
-      letterSpacing: 0.37,
-      color: mainColor[1],
-    ),
-  ];
+        TextStyle(
+          fontStyle: FontStyle.normal,
+          fontWeight: FontWeight.w700,
+          fontFamily: FontFamily.roboto,
+          fontSize: 40,
+          height: 1.20,
+          letterSpacing: 0.37,
+          color: mainColor[0],
+        ),
+        TextStyle(
+          fontStyle: FontStyle.normal,
+          fontWeight: FontWeight.w700,
+          fontFamily: FontFamily.roboto,
+          fontSize: 40,
+          height: 1.20,
+          letterSpacing: 0.37,
+          color: mainColor[1],
+        ),
+      ];
 
   static List<TextStyle> get cardTitle => [
-    TextStyle(
-      fontStyle: FontStyle.normal,
-      fontWeight: FontWeight.w600,
-      fontFamily: FontFamily.roboto,
-      fontSize: 25,
-      height: 1.28,
-      color: mainColor[0],
-    ),
-    TextStyle(
-      fontStyle: FontStyle.normal,
-      fontWeight: FontWeight.w600,
-      fontFamily: FontFamily.roboto,
-      fontSize: 25,
-      height: 1.28,
-      color: mainColor[1],
-    ),
-  ];
+        TextStyle(
+          fontStyle: FontStyle.normal,
+          fontWeight: FontWeight.w600,
+          fontFamily: FontFamily.roboto,
+          fontSize: 25,
+          height: 1.28,
+          color: mainColor[0],
+        ),
+        TextStyle(
+          fontStyle: FontStyle.normal,
+          fontWeight: FontWeight.w600,
+          fontFamily: FontFamily.roboto,
+          fontSize: 25,
+          height: 1.28,
+          color: mainColor[1],
+        ),
+      ];
 
   static List<TextStyle> get button => [
-    TextStyle(
-      fontStyle: FontStyle.normal,
-      fontWeight: FontWeight.w600,
-      fontFamily: FontFamily.roboto,
-      fontSize: 16,
-      height: 1.5,
-      color: mainColor[0],
-    ),
-    TextStyle(
-      fontStyle: FontStyle.normal,
-      fontWeight: FontWeight.w600,
-      fontFamily: FontFamily.roboto,
-      fontSize: 16,
-      height: 1.5,
-      color: mainColor[1],
-    ),
-  ];
+        TextStyle(
+          fontStyle: FontStyle.normal,
+          fontWeight: FontWeight.w600,
+          fontFamily: FontFamily.roboto,
+          fontSize: 16,
+          height: 1.5,
+          color: mainColor[0],
+        ),
+        TextStyle(
+          fontStyle: FontStyle.normal,
+          fontWeight: FontWeight.w600,
+          fontFamily: FontFamily.roboto,
+          fontSize: 16,
+          height: 1.5,
+          color: mainColor[1],
+        ),
+      ];
 
   static List<TextStyle> get compactCardTitle => [
-     TextStyle(
-      fontStyle: FontStyle.normal,
-      fontWeight: FontWeight.w500,
-      fontFamily: FontFamily.roboto,
-      fontSize: 16,
-      height: 1.23,
-      color: mainColor[0],
-    ),
-    TextStyle(
-      fontStyle: FontStyle.normal,
-      fontWeight: FontWeight.w500,
-      fontFamily: FontFamily.roboto,
-      fontSize: 16,
-      height: 1.23,
-      color: mainColor[1],
-    ),
-  ];
+        TextStyle(
+          fontStyle: FontStyle.normal,
+          fontWeight: FontWeight.w500,
+          fontFamily: FontFamily.roboto,
+          fontSize: 16,
+          height: 1.23,
+          color: mainColor[0],
+        ),
+        TextStyle(
+          fontStyle: FontStyle.normal,
+          fontWeight: FontWeight.w500,
+          fontFamily: FontFamily.roboto,
+          fontSize: 16,
+          height: 1.23,
+          color: mainColor[1],
+        ),
+      ];
 
   static List<TextStyle> get compactCardSubtitle => [
-     TextStyle(
-      fontStyle: FontStyle.normal,
-      fontWeight: FontWeight.w400,
-      fontFamily: FontFamily.roboto,
-      fontSize: 13,
-      height: 1.23,
-      color: mainColor[0],
-    ),
-    TextStyle(
-      fontStyle: FontStyle.normal,
-      fontWeight: FontWeight.w400,
-      fontFamily: FontFamily.roboto,
-      fontSize: 13,
-      height: 1.23,
-      color: mainColor[1],
-    ),
-  ];
+        TextStyle(
+          fontStyle: FontStyle.normal,
+          fontWeight: FontWeight.w400,
+          fontFamily: FontFamily.roboto,
+          fontSize: 13,
+          height: 1.23,
+          color: mainColor[0],
+        ),
+        TextStyle(
+          fontStyle: FontStyle.normal,
+          fontWeight: FontWeight.w400,
+          fontFamily: FontFamily.roboto,
+          fontSize: 13,
+          height: 1.23,
+          color: mainColor[1],
+        ),
+      ];
+
+  static List<TextStyle> get dropdownButtonText => [
+        TextStyle(
+          fontStyle: FontStyle.normal,
+          fontWeight: FontWeight.w500,
+          fontFamily: FontFamily.roboto,
+          fontSize: 13,
+          height: 1.23,
+          color: mainColor[0],
+        ),
+        TextStyle(
+          fontStyle: FontStyle.normal,
+          fontWeight: FontWeight.w500,
+          fontFamily: FontFamily.roboto,
+          fontSize: 13,
+          height: 1.23,
+          color: mainColor[1],
+        ),
+      ];
 }
